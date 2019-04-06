@@ -1,22 +1,40 @@
-html { height: 95%; }
-
-body, #container, #content {
-   height: 100%;
+html, body, #container {
+   margin: 0;
+   padding: 0;
 }
 
 #container {
    font-family: verdana, sans-serif;
 }
 
+#header {
+  margin-top: 2em;
+  margin-bottom: 6em;
+}
+
+#header h1 {
+  font-size: 6.2em;
+  font-family: georgia, serif;
+  text-align: center;
+  margin-bottom: 0em;
+}
+
+#header p {
+  margin-top: 0;
+  text-align: center;
+}
+
 #content {
-   margin: 0 auto 0 auto;
+   margin: 0 auto 0em auto;
+   padding-bottom: 6em;
    text-align: center;
 }
 
 #content img {
    vertical-align: top;
    width: auto;
-   height: 100%;
+   max-width: 100%;
+   max-height: 100%;
 }
 
 #content a {
@@ -28,34 +46,38 @@ body, #container, #content {
 #content a:hover { color: #000; }
 #content a:active { color: #999; }
 
-#info a { text-decoration: underline; }
+a.next-page, a.prev-page {
+  display: inline-block;
+  padding: 0.62em;
+  background: #EEE;
+}
 
-#info {
-   position: absolute;
-   top: 1em;
-   left: 1em;
+.info a { text-decoration: underline; }
+
+.info {
+   margin: 6em 0em 0em 0.62em;
    text-align: left;
    border-left: 4px solid #CCC;
    padding-left: 0.4em;
    line-height: 1em;
 }
-#info:hover {
+.info:hover {
    border-left: 4px solid #000;
 }
-#info #title {
+.info .title {
    margin: -4px 0 0 0;
    padding: 0;
    line-height: 1em;
    text-transform: uppercase;
    font-size: 1.6em;
 }
-#info .description {
+.info .description {
    margin: 0 0 -3px 0;
    padding: 0;
    font-size: 0.9em;
    color: #999999;
 }
 
-#info #fullsize {
+.info .fullsize {
   margin-top: 0.38em;
 }
